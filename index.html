@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뉴스 통계 분석기</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖📊 AI 뉴스 통계 분석기</h1>
+            <p>Gemini AI가 뉴스 기사의 통계 오류와 심슨의 역설을 지능적으로 분석합니다</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <h2>뉴스 기사 입력</h2>
+                <textarea id="newsInput" placeholder="뉴스 기사 텍스트를 여기에 붙여넣으세요..."></textarea>
+                <button id="analyzeBtn" class="analyze-btn">분석 시작</button>
+            </div>
+
+            <div class="results-section" id="resultsSection" style="display: none;">
+                <h2>분석 결과</h2>
+                
+                <div class="statistics-found">
+                    <h3>📈 발견된 통계 문장</h3>
+                    <div id="statisticsList" class="statistics-list"></div>
+                </div>
+
+                <div class="analysis-results">
+                    <div class="error-analysis">
+                        <h3>⚠️ 통계 오류 분석</h3>
+                        <div id="errorAnalysis" class="analysis-content"></div>
+                    </div>
+
+                    <div class="simpson-analysis">
+                        <h3>🔄 심슨의 역설 가능성</h3>
+                        <div id="simpsonAnalysis" class="analysis-content"></div>
+                    </div>
+                </div>
+
+                <div class="visualization">
+                    <h3>📊 시각화</h3>
+                    <div id="chartContainer" class="chart-container"></div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>🤖 Gemini AI와 함께 통계 오류와 심슨의 역설을 주의하여 뉴스를 읽어보세요!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
